@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web API</title>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+        <script src="webapi.js"></script>
+        <style>
+            body{
+                background-image:url("https://www.apexofinnovation.com/wp-content/uploads/2019/09/artificial_intelligence_a_lifeline_for_floundering_big_data.jpg");
+                background-repeat:no-repeat;
+                background-position:relative;
+                background-size: cover;
+            }
+            #insert,#delete,#update,#read{
+                padding:8px 15px;
+                margin:3px 0px;
+                background-color:darkblue;
+                border:none;
+            }
+            input[type=text]
+            {
+                padding:12px 20px;
+                width:30%;
+                border-radius:1px;
+                border:none;
+            }
+        </style>
+        </head>
+        <body>
+            <center>
+                
+            
+                <h1>CRUD Operations</h1>
+            <div class="row">
+                <input type="text" id="studname" placeholder="Enter name of student"><br><br>
+            </div>
+            <div class="row">
+               <input type="text" id="rollno" placeholder="Enter the roll number"><br><br>
+            </div>
+            <button id="insert" onclick="insertData()">Insert</button>
+            <button id="delete" onclick="deleteData()">Delete</button>
+            <button id="update" onclick="updateData()">Update</button>
+            <button id="read" onclick="loadData()">Read</button><br>
+            <div id="table"></div>
+            </center>
+        </div>
+        </body>
+        </html>
